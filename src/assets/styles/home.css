@@ -24,24 +24,24 @@
     color: #fff;
     position: absolute;
     margin-left: -320px;
-    margin-top: 20px;
-    font-size: 25px;
+    margin-top: 30px;
+    font-size: 20px;
 }
 
 .list-2 {
     color: #fff;
     position: absolute;
     margin-left: -100px;
-    margin-top: 20px;
-    font-size: 25px;
+    margin-top: 30px;
+    font-size: 20px;
 }
 
 .list-3 {
     color: #fff;
     position: absolute;
     margin-left: 160px;
-    margin-top: 20px;
-    font-size: 25px;
+    margin-top: 30px;
+    font-size: 20px;
 }
 
 .icon-sections {
@@ -51,16 +51,26 @@
 .img-panier {
     position: absolute;
     margin-left: -30px;
-    width: 40px;
-    margin-top: 10px;
+    width: 35px;
+    margin-top: 18px;
 }
 
 .img-search {
     position: absolute;
     margin-left: 30px;
-    margin-top: 10px;
-    width: 40px;
+    margin-top: 23px;
+    width: 28px;
 }
+
+.separator {
+    width: 1px;
+    height: 2em;
+    background-color: #999;
+    display: inline-block;
+    margin: 21px 17px;
+    position: absolute;
+}
+
 
 /*-------------Main Section-------------------*/
 .main-section {
@@ -68,4 +78,202 @@
     background-size: cover;
     background-position: center;
     height: 550px;
+}
+
+/*-------------Section Shoes-------------------*/
+.under-shoes-1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.photosynthesis {
+    width: 210px;
+    height: 210px;
+}
+
+.title-1 {
+    color: #818181;
+    position: absolute;
+    margin-top: -50px;
+}
+
+.price-1 {
+    color: #eb4034;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 90px;
+}
+
+.air-zoom {
+    width: 210px;
+    height: 173px;
+}
+
+.title-2 {
+    color: #818181;
+    position: absolute;
+    margin-top: -13px;
+}
+
+.price-2 {
+    color: #eb4034;
+    position: absolute;
+    margin-top: 21px;
+    margin-left: 90px;
+}
+
+.zoom-terra {
+    width: 210px;
+    height: 173px;
+}
+
+.title-3 {
+    color: #818181;
+    position: absolute;
+    margin-top: -13px;
+    margin-left: 30px;
+}
+
+.price-3 {
+    color: #eb4034;
+    position: absolute;
+    margin-top: 21px;
+    margin-left: 85px;
+}
+
+.photosynthesis-2 {
+    width: 210px;
+    height: 173px;
+}
+
+.title-4 {
+    color: #818181;
+    position: absolute;
+    margin-top: -13px;
+    margin-left: 0px;
+}
+
+.price-4 {
+    color: #eb4034;
+    position: absolute;
+    margin-top: 21px;
+    margin-left: 100px;
+}
+
+.under-shoes-2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.rendering {
+    width: 210px;
+    height: 210px;
+}
+
+.title-5 {
+    color: #818181;
+    position: absolute;
+    margin-top: -25px;
+}
+
+.price-5 {
+    color: #eb4034;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 85px;
+}
+
+.lunaracer {
+    width: 210px;
+    height: 210px;
+}
+
+.title-6 {
+    color: #818181;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 55px;
+}
+
+.price-6 {
+    color: #eb4034;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 105px;
+}
+
+.isolated {
+    width: 210px;
+    height: 210px;
+}
+
+.title-7 {
+    color: #818181;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 1px;
+}
+
+.price-7 {
+    color: #eb4034;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 85px;
+}
+
+.zoom-air {
+    width: 210px;
+    height: 180px;
+}
+
+.title-8 {
+    color: #818181;
+    position: absolute;
+    margin-left: 63px;
+    margin-top: 5px;
+}
+
+.price-8 {
+    color: #eb4034;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 107px;
+}
+
+/*-------------Section Shoes-------------------*/
+.footer-section {
+    background-color: #000000;
+    margin-top: 70px;
+    height: 60px;
+}
+
+.under-footer {
+    display: flex;
+    justify-content: center;
+    margin-left: -55px;
+}
+
+.img-copyright {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 21px;
+}
+
+.title-9 {
+    color: #fff;
+    position: absolute;
+    margin-left: 85px;
+    margin-top: 22px;
+    font-size: 15px;
+}
+
+.paragraph-1 {
+    color: #fff;
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 22px;
+    font-size: 15px;
 }
