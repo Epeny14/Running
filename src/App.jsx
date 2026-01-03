@@ -1,0 +1,16 @@
+import { BrowserRouter } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
+import Accueil from './pages/Accueil';
+
+const App = () => {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Accueil />} />
+            </Routes>
+        </BrowserRouter>
+    )
+}
+
+export default App
