@@ -3,17 +3,78 @@ import Img1 from "../assets/img/logo-nike.png";
 import Img2 from "../assets/img/icone-panier.png";
 import Img3 from "../assets/img/icone-search.png";
 import "../assets/styles/home.css";
-import Img4 from "../assets/img/Lunarglide 6 Photosynthesis.png";
-import Img5 from "../assets/img/Nike Air Zoom Terra Shoe Render.png";
-import Img6 from "../assets/img/Nike Air Zoom Terra.png";
-import Img7 from "../assets/img/Nike Free 3.0 Photosynthesis Shoe.png";
-import Img8 from "../assets/img/Nike Lunaracer 3+ Shoe Rendering.png";
-import Img9 from "../assets/img/Nike Lunaracer 3+.png";
-import Img10 from "../assets/img/Nike Lunaracer+ 3 Shoe Isolated.png";
-import Img11 from "../assets/img/Nike-Air-Zoom-3.png";
+// import Img4 from "../assets/img/Lunarglide 6 Photosynthesis.png";
+// import Img5 from "../assets/img/Nike Air Zoom Terra Shoe Render.png";
+// import Img6 from "../assets/img/Nike Air Zoom Terra.png";
+// import Img7 from "../assets/img/Nike Free 3.0 Photosynthesis Shoe.png";
+// import Img8 from "../assets/img/Nike Lunaracer 3+ Shoe Rendering.png";
+// import Img9 from "../assets/img/Nike Lunaracer 3+.png";
+// import Img10 from "../assets/img/Nike Lunaracer+ 3 Shoe Isolated.png";
+// import Img11 from "../assets/img/Nike-Air-Zoom-3.png";
 import Img12 from "../assets/img/icons-copyright.png";
 
-const MainHome = () => {
+const products = [
+    {
+        id: 1,
+        name: "Nike Lunarglide 6 Photosynthesis",
+        price: 130,
+        image: "/Lunarglide 6 Photosynthesis.png",
+        description:
+            "Conçue pour le running, la Lunarglide 6 offre un amorti confortable et une excellente stabilité.",
+    },
+    {
+        id: 2,
+        name: "Nike Air Zoom Terra Shoe Render",
+        price: 110,
+        image: "/Nike Air Zoom Terra Shoe Render.png",
+        description: "Chaussure de trail légère et réactive.",
+    },
+    {
+        id: 3,
+        name: "Nike Air Zoom Terra",
+        price: 130,
+        image: "/Nike Air Zoom Terra.png",
+        description: "Chaussure de trail légère et réactive.",
+    },
+    {
+        id: 4,
+        name: "Nike Free 3.0 Photosynthesis Shoe",
+        price: 100,
+        image: "/Nike Free 3.0 Photosynthesis Shoe.png",
+        description: "Chaussure de trail légère et réactive.",
+    },
+    {
+        id: 5,
+        name: "Nike Lunaracer 3+ Shoe Rendering",
+        price: 130,
+        image: "/Nike Lunaracer 3+ Shoe Rendering.png",
+        description: "Chaussure de trail légère et réactive.",
+    },
+    {
+        id: 6,
+        name: "Nike Lunaracer 3+",
+        price: 140,
+        image: "/Nike Lunaracer 3+.png",
+        description: "Chaussure de trail légère et réactive.",
+    },
+    {
+        id: 7,
+        name: "Nike Lunaracer+ 3 Shoe Isolated",
+        price: 100,
+        image: "/Nike Lunaracer+ 3 Shoe Isolated.png",
+        description: "Chaussure de trail légère et réactive.",
+    },
+    {
+        id: 8,
+        name: "Nike Air Zoom 3",
+        price: 130,
+        image: "/Nike-Air-Zoom-3.png",
+        description: "Chaussure de trail légère et réactive.",
+    },
+];
+
+const MainHome = ({ onSelectProduct }) => {
+
     return (
         <div>
             <div className="header">
@@ -43,12 +104,42 @@ const MainHome = () => {
             <div className="main-section"></div>
 
             <div className="section-shoes">
-                <div className="under-shoes-1">
+                <div className="product-grid">
+                    {products.map((product) => (
+                        <div
+                            key={product.id}
+                            className="product-card"
+                            onClick={() => onSelectProduct(product)}
+                        >
+                            <img src={product.image} />
+                            <p>{product.name}</p>
+                            <p>{product.price} €</p>
+                        </div>
+                    ))}
+                </div>
+                {/* <div className="under-shoes-1">
                     <div className="article-1">
-                        <img src={Img4} alt="nike-1" className="photosynthesis"></img>
+                        <img
+                            src={Img4}
+                            alt="nike-1"
+                            className="photosynthesis"
+                            onClick={handleClick}
+                            style={{ cursor: "pointer", width: "200px" }}
+                        />
                         <h4 className="title-1">Nike Lunarglide 6 Photosynthesis</h4>
                         <p className="price-1">130 €</p>
+
+                        {isOpen && (
+                            <div>
+                                <h4>Description</h4>
+                                <p>
+                                    Conçue pour le running, la Lunarglide 6 offre un amorti confortable
+                                    et une excellente stabilité.
+                                </p>
+                            </div>
+                        )}
                     </div>
+
                     <div className="article-2">
                         <img src={Img5} alt="nike-2" className="air-zoom"></img>
                         <h4 className="title-2">Nike Air Zoom Terra Shoe Render</h4>
@@ -64,8 +155,8 @@ const MainHome = () => {
                         <h4 className="title-4">Nike Free 3.0 Photosynthesis Shoe</h4>
                         <p className="price-4">100 €</p>
                     </div>
-                </div>
-                <div className="under-shoes-2">
+                </div> */}
+                {/* <div className="under-shoes-2">
                     <div className="article-5">
                         <img src={Img8} alt="nike-5" className="rendering"></img>
                         <h4 className="title-5">Nike Lunaracer 3+ Shoe Rendering</h4>
@@ -86,8 +177,10 @@ const MainHome = () => {
                         <h4 className="title-8">Nike Air Zoom 3</h4>
                         <p className="price-8">130 €</p>
                     </div>
-                </div>
+                </div> */}
             </div>
+
+
 
             <div className="footer-section">
                 <div className="under-footer">
