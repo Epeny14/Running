@@ -22,26 +22,29 @@ export default function ProductDetail({ product, onClose }) {
 
                     <hr className="line"></hr>
 
-                    <p>{product.description}</p>
+                    <p className="text-description">{product.description}</p>
 
                     <p className="price">
                         {product.price} €
                     </p>
 
-                    <label>Size</label>
-                    <br />
-                    <select value={size} onChange={(e) => setSize(e.target.value)}>
-                        <option>42</option>
-                        <option>43</option>
-                        <option>44</option>
-                    </select>
+                    <div className="section-cart">
+                        <label>Size</label>
+                        <br />
+                        <select className="section-size" value={size} onChange={(e) => setSize(e.target.value)}>
+                            <option>42</option>
+                            <option>43</option>
+                            <option>44</option>
+                        </select>
 
-                    <br /><br />
-                    <button
-                        className="add-cart"
-                        onClick={() => addToCart(product, size)}
-                    >   Ajouter eu panier
-                        T</button>
+                        <br /><br />
+                        <button
+                            className="add-cart"
+                            onClick={() => addToCart(product, size)}
+                        >
+                            Ajouter au panier
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
