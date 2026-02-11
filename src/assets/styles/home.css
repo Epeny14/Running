@@ -80,7 +80,9 @@
     background-image: url("../img/running-image.png");
     background-size: cover;
     background-position: center;
-    height: 550px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 }
 
 /*-------------Section Shoes-------------------*/
@@ -546,4 +548,135 @@
 
 .hidden {
     display: none;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .header {
+        width: 100%;
+        height: 80px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        margin-left: -87px;
+        margin-top: 10px;
+    }
+
+
+    .list-1 {
+        position: absolute;
+        margin-left: -160px;
+    }
+
+    .list-2 {
+        position: absolute;
+        margin-left: -60px;
+    }
+
+    .list-3 {
+        position: absolute;
+        margin-left: 70px;
+    }
+
+    .img-panier {
+        position: absolute;
+        margin-left: -28px;
+        margin-top: 23px;
+        width: 30px;
+    }
+
+    .img-search {
+        position: absolute;
+        margin-left: 28px;
+        margin-top: 23px;
+        width: 30px;
+    }
+
+    .separator {
+        position: absolute;
+        width: 1px;
+        height: 30px;
+        margin-top: 24px;
+        margin-left: 16px;
+    }
+
+    .main-section {
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+    }
+
+    .description-grid {
+        position: fixed;
+    }
+
+    .product-detail {
+        width: 440px;
+        height: 266px;
+        margin-top: 1px;
+    }
+
+    .close-btn {}
+
+    .product-info {}
+
+    .title-product {
+        position: absolute;
+        margin-left: 180px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .line {
+        position: absolute;
+        margin-top: 52px;
+        margin-left: 180px;
+        width: 80px;
+    }
+
+    .text-description {
+        position: absolute;
+        margin-top: 74px;
+        margin-left: 180px;
+    }
+
+    .price {
+        position: absolute;
+        margin-top: 140px;
+        margin-left: 175px;
+    }
+
+    .section-cart {}
+
+    .img-shoes {
+        width: 40%;
+        height: 60%;
+        position: absolute;
+        margin-top: 60px;
+    }
+
+    .text-size {
+        position: absolute;
+        margin-top: 160px;
+        margin-left: 175px;
+    }
+
+    .section-size {
+        position: absolute;
+        margin-top: 204px;
+        margin-left: 175px;
+        width: 12%;
+        height: 10%;
+    }
+
+    .add-cart {
+        position: absolute;
+        margin-top: 203px;
+        margin-left: 255px;
+        width: 34%;
+        height: 37px;
+    }
 }

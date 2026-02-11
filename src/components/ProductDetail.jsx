@@ -15,7 +15,7 @@ export default function ProductDetail({ product, onClose }) {
                     ✕
                 </button>
 
-                <img src={product.image} width={350} />
+                <img src={product.image} width={350} className="img-shoes" />
 
                 <div className="product-info">
                     <h1 className="title-product">{product.name}</h1>
@@ -29,7 +29,7 @@ export default function ProductDetail({ product, onClose }) {
                     </p>
 
                     <div className="section-cart">
-                        <label>Size</label>
+                        <label className="text-size">Size</label>
                         <br />
                         <select className="section-size" value={size} onChange={(e) => setSize(e.target.value)}>
                             <option>42</option>
