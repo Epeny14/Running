@@ -251,10 +251,8 @@
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* 4 colonnes */
     gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 40px;
 }
 
 .product-card {
@@ -264,7 +262,8 @@
 
 .product-card img {
     width: 100%;
-    max-width: 180px;
+    height: 200px;
+    object-fit: contain;
 }
 
 /*-------------Description Grid------------------*/
@@ -550,7 +549,7 @@
     display: none;
 }
 
-/* Mobile */
+
 @media (max-width: 600px) {
     .header {
         width: 100%;
@@ -607,6 +606,7 @@
         background-size: cover;
         background-position: center;
         height: 80vh;
+        width: 585px;
     }
 
     .description-grid {
@@ -649,7 +649,9 @@
         margin-left: 175px;
     }
 
-    .section-cart {}
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
 
     .img-shoes {
         width: 40%;
@@ -679,4 +681,51 @@
         width: 34%;
         height: 37px;
     }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .header {
+        width: 122%;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        margin-left: -70px;
+    }
+
+    .main-section {
+        height: 90vh;
+        width: 586px;
+    }
+
+    .product-card img {
+        margin-left: 50px;
+    }
+
+    .product-name {
+        margin-left: 100px;
+    }
+
+    .product-price {
+        margin-left: 80px;
+    }
+
+    .side-cart.open {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 380px;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .footer-section {
+        width: 122%;
+    }
+
 }

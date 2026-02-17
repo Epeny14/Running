@@ -112,8 +112,8 @@ const MainHome = ({ onSelectProduct }) => {
                             onClick={() => onSelectProduct(product)}
                         >
                             <img src={product.image} />
-                            <p>{product.name}</p>
-                            <p>{product.price} €</p>
+                            <p className="product-name">{product.name}</p>
+                            <p className="product-price">{product.price} €</p>
                         </div>
                     ))}
                 </div>
