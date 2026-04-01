@@ -15,7 +15,7 @@ export default function ProductDetail({ product, onClose }) {
                     ✕
                 </button>
 
-                <img src={product.image} width={350} className="img-shoes" />
+                <img src={product.image} className="img-shoes" />
 
                 <div className="product-info">
                     <h1 className="title-product">{product.name}</h1>
